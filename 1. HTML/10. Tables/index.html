@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    table,
+    tr,
+    th,
+    td,
+    caption {
+      border: 1px solid black;
+      border-collapse: collapse;
+      padding: 0.5rem;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- table, caption, thead, tbody, tr, th, td -->
+  <table>
+    <caption> <!-- Semantic -->
+      Places to visit in Egypt for every city
+    </caption>
+    <!-- Table head -->
+    <thead> <!-- Semantic -->
+      <tr>
+        <!-- Table Head -->
+        <th scope="row"></th>
+        <th>City</th>
+        <th>Place to visit</th>
+      </tr>
+    </thead>
+
+    <!-- Table body -->
+    <tbody> <!-- Semantic -->
+      <!-- Table Row -->
+      <tr>
+        <!-- Table Data -->
+        <th scope="row">Place in Cairo</th>
+        <td>Cairo</td> <!-- First Column -->
+        <td>Egyptian Museum</td> <!-- Second Column -->
+      </tr>
+
+      <tr>
+        <th scope="row">Place in Luxor</th>
+        <td>Luxor</td>
+        <td>Karnak Temple</td>
+      </tr>
+
+      <tr>
+        <th scope="row">Place in Aswan</th>
+        <td>Aswan</td>
+        <td>Abu Simbel</td>
+      </tr>
+
+      <tr>
+        <th scope="row">Many other</th>
+        <td colspan="2">Many other places</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+
+</html>

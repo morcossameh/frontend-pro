@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Forms</title>
+</head>
+
+<body>
+  <!-- form, label, input, button, select, option, optgroup, fieldset, legend  -->
+  <form action="https://httpbin.org/get" method="get">
+    <fieldset>
+      <legend>Personal Info</legend>
+      <p>
+        <label for="firstName">First Name</label>
+        <!-- name: external use | id, for: internal -->
+        <input type="text" name="firstName" id="firstName" placeholder="Type your first name..." required autofocus>
+      </p>
+
+      <p>
+        <label for="lastName">Last Name</label>
+        <!-- name: external use | id, for: internal -->
+        <input type="text" placeholder="Type your last name..." name="lastName" id="lastName" required>
+      </p>
+
+      <p>
+        <label for="password">Password</label>
+        <!-- name: external use | id, for: internal -->
+        <input type="password" placeholder="Type your password..." name="password" id="password" required>
+      </p>
+
+      <p>
+        <label for="phone">Phone</label>
+        <!-- name: external use | id, for: internal -->
+        <input type="tel" placeholder="Type your phone..." pattern="[0-9]{10}" name="phone" id="phone" required>
+      </p>
+
+      <p>
+        <label for="birthday">Birthday</label>
+        <!-- name: external use | id, for: internal -->
+        <input type="date" placeholder="Enter your birthday..." name="birthday" id="birthday" required>
+      </p>
+    </fieldset>
+
+    <fieldset>
+      <legend>Favorite Places</legend>
+      <p>
+        <label for="places">Favorite Places:</label>
+        <select name="places" id="places" multiple size="5">
+          <optgroup label="Cairo">
+            <option value="0">Egyptian Museum</option>
+            <option value="1">Sphinx</option>
+            <option value="2">Pyramids of Giza</option>
+          </optgroup>
+          <optgroup label="Luxor">
+            <option value="3">Valley of the Kings</option>
+            <option value="4">Karnak Temple</option>
+          </optgroup>
+          <optgroup label="Aswan">
+            <option value="5">Philae Temple</option>
+            <option value="6">Abu Simbel</option>
+          </optgroup>
+        </select>
+      </p>
+    </fieldset>
+    <fieldset>
+      <legend>What is your favorite transport?</legend>
+      <p>
+        <input type="radio" name="transport" id="train" value="train">
+        <label for="train">Train</label>
+      </p>
+
+      <p>
+        <input type="radio" name="transport" id="plane" value="plane">
+        <label for="plane">Plane</label>
+      </p>
+
+      <p>
+        <input type="radio" name="transport" id="car" value="car">
+        <label for="car">Car</label>
+      </p>
+    </fieldset>
+    <fieldset>
+      <legend>Select the month you want to visit:</legend>
+      <p>
+        <input type="checkbox" name="month" id="june" value="june">
+        <label for="june">June</label>
+      </p>
+
+      <p>
+        <input type="checkbox" name="month" id="july" value="july">
+        <label for="july">July</label>
+      </p>
+
+      <p>
+        <input type="checkbox" name="month" id="august" value="august">
+        <label for="august">August</label>
+      </p>
+    </fieldset>
+
+    <fieldset>
+      <legend>Send Us A note</legend>
+      <label for="message">Your message:</label>
+      <br>
+      <textarea name="message" id="message" rows="10" cols="50" placeholder="Type your message here ..."></textarea>
+    </fieldset>
+    <button type="submit">Submit</button>
+  </form>
+</body>
+
+</html>
