@@ -1,0 +1,31 @@
+
+
+/* absolute: px, mm, cm, pt */
+/* relative: rem, em, %, vw, vh */
+
+p {
+  font-size: 1.2rem;
+}
+
+header {
+  width: 50%;
+}
+
+h1 {
+  /* viewport width */
+  width: 50vw;
+  background-color: antiquewhite;
+}
+
+main {
+  height: 50vh;
+  background-color: aliceblue;
+}
+
+body {
+  min-height: 100vh;
+}
+
+/* span {
+  font-size: 3em;
+} */

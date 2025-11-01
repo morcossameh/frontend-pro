@@ -1,0 +1,20 @@
+
+
+body {
+  /* r: red  0-255 */
+  /* g: green 0-255 */
+  /* b: blue 0-255 */
+  background-color: #FDFFFC;
+
+  /* h: hue 0 - 359 */
+  /* s: saturation 0-100 */
+  /* l: lightness 0-100 */
+  color: #235789;
+}
+
+div {
+
+  /* 00 -> 0 */
+  /* FF -> 255 */
+  /* background-color: rgba(0, 0, 0, 0.1); */
+}

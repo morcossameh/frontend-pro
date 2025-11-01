@@ -1,0 +1,46 @@
+
+/* selector { */
+/*   property1: value1; */
+/*   property2: value2; */
+/*   property3: value3; */
+/*   property4: value4; */
+/* } */
+
+/* universal selector */
+/* * {
+  border: 2px solid black;
+} */
+
+/* element selector */
+p {
+  color:chocolate;
+}
+
+/* group selector */
+/* p, h1 {
+  color:chocolate;
+} */
+
+h1 {
+  font-weight:lighter;
+}
+
+body {
+  font-size: 32px;
+}
+
+/* class selector */
+.gray {
+  color: gray !important;
+}
+
+/* ID selector */
+#green {
+  color: green;
+}
+
+
+p span {
+  font-weight: bold;
+}
+
