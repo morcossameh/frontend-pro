@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 80%;
+  height: 600px;
+  margin: 2rem auto;
+  background-color: bisque;
+}
+
+.sub-container {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-around; */
+  /* align-items: start; */
+  /* flex-wrap: wrap; */
+  gap: 1rem;
+}
+
+.item {
+  background-color: crimson;
+  color: white;
+  padding: 1rem;
+  font-size: 2rem;
+  height: 75px;
+  width: 500px;
+}
+
+.item:first-child {
+  flex-shrink: 2;
+}
+
+.item:nth-child(2) {
+  flex-shrink: 1;
+}
+
+
+

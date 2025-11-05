@@ -11,10 +11,6 @@ a {
   cursor: pointer;
 }
 
-p {
-  cursor: pointer;
-}
-
 a:visited {
   background-color: hsl(0, 59%, 50%);
 }

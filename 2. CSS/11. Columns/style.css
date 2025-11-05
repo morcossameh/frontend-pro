@@ -1,0 +1,36 @@
+
+.columns {
+  /* column-count: 3;
+  column-width: 250px; */
+
+  columns: 3 250px;
+
+  column-rule: 1px solid black;
+
+  column-gap: 2rem;
+}
+
+.columns p {
+  margin-top: 0;
+}
+
+.topic {
+  margin-top: 0;
+  background-color: brown;
+  color: white;
+  padding: 1rem;
+  break-before: column;
+}
+
+.columns .quote {
+  column-span: all;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+

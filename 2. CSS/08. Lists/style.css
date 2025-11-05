@@ -1,0 +1,21 @@
+ol {
+  /* list-style-type: none; */
+  /* padding: 0.5rem; */
+}
+
+ul {
+  list-style-type: square;
+  /* list-style: url('right-arrow.png'); */
+  font-size: 2rem;
+}
+
+/* pseudo element */
+ul ::marker {
+  color: red;
+  content: ">";
+}
+
+ul li:nth-child(odd) {
+  color: red;
+}
+

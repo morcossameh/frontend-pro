@@ -1,0 +1,22 @@
+
+section {
+  background-color: burlywood;
+  /* overflow: auto; */
+  display: flow-root;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: bisque;
+  padding: 0.5rem;
+  margin: 0.5rem;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
