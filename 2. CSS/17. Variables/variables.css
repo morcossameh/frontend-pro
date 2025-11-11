@@ -1,0 +1,15 @@
+
+:root {
+  --PRIMARY-COLOR: beige;
+
+  /* Font sizes */
+  --FS-S: 0.5rem;
+  --FS-M: 1rem;
+  --FS-L: 1.5rem;
+  --FS-XL: 2rem;
+
+  /* border */
+  --BORDERS: 3px solid white;
+
+  
+}

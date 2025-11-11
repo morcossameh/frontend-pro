@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  grid-template-rows: 50px auto 50px;
+  min-height: 100vh;
+}
+
+header,
+footer {
+  background-color: burlywood;
+  display: grid;
+  place-content: center;
+  border: var(--BORDERS)
+}
+
+
+main {
+  display: flex;
+}
+
+aside {
+  background-color: crimson;
+  color: white;
+  width: 250px;
+  height: 100%;
+  display: grid;
+  place-content: center;
+  border: var(--BORDERS)
+}
+
+main section {
+  background-color: var(--PRIMARY-COLOR);
+  flex-grow: 1;
+  display: grid;
+  place-content: center;
+  border: var(--BORDERS)
+}
+
+
+
+/* min-width: 320px, device: small phones (e.g., iPhone SE)
+min-width: 375px, device: medium phones (e.g., iPhone 12/13/14)
+min-width: 425px, device: large phones / small tablets (e.g., Galaxy Note)
+min-width: 480px, device: small tablets / landscape phones
+min-width: 600px, device: small tablets (portrait)
+min-width: 768px, device: tablets (e.g., iPad portrait)
+min-width: 992px, device: small laptops / large tablets (e.g., iPad Pro landscape)
+min-width: 1024px, device: standard laptops (13″ MacBook, Surface Pro)
+min-width: 1200px, device: desktops (1080p monitors)
+min-width: 1440px, device: large desktops / wide screens
+min-width: 1920px, device: full HD / large monitors
+min-width: 2560px, device: 2K–4K displays */
+
+/* large desktops */
+@media screen and (max-width: 1440px) {
+  main section {
+    --PRIMARY-COLOR: cadetblue;
+    color: white;
+  }
+}
+
+/* small laptops */
+@media screen and (max-width: 992px) {
+  main section {
+    --PRIMARY-COLOR: darkorange;
+    color: white;
+  }
+}
+
+/* tablets */
+@media screen and (max-width: 768px) {
+  main section {
+    --PRIMARY-COLOR: coral;
+    color: white;
+  }
+  aside {
+    display: none;
+  }
+}
+
+
+/* large phones */
+@media screen and (max-width: 425px) {
+  main section {
+    --PRIMARY-COLOR: chocolate;
+    color: white;
+  }
+  aside {
+    display: none;
+  }
+}
+
+
+/* small phones */
+@media screen and (max-width: 320px) {
+  main section {
+    --PRIMARY-COLOR: brown;
+    color: white;
+  }
+  aside {
+    display: none;
+  }
+}
