@@ -1,0 +1,32 @@
+[
+  {
+    "firstName": "Ali",
+    "lastName": "Mohamed",
+    "age": 43,
+    "isStudent": true,
+    "skills": [
+      "HTML",
+      "CSS",
+      "JS"
+    ],
+    "address": {
+      "city": "Cairo",
+      "country": "Egypt"
+    }
+  },
+  {
+    "firstName": "Ahmed",
+    "lastName": "Abd Elrahman",
+    "age": 24,
+    "isStudent": false,
+    "skills": [
+      "HTML",
+      "CSS",
+      "JS"
+    ],
+    "address": {
+      "city": "Cairo",
+      "country": "Egypt"
+    }
+  }
+]
