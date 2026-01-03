@@ -1,0 +1,10 @@
+body {
+  background-color: #224158;
+  color: white;
+}
+
+label, input {
+  margin-right: 1rem;
+  margin-bottom: 0.5rem;
+}
+

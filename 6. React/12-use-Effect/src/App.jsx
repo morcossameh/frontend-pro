@@ -2,15 +2,30 @@ import { useEffect, useState } from "react";
 
 function App() {
   const [count, setCount] = useState(0);
-  const [test, setTest] = useState(false)
+  const [test, setTest] = useState(false);
+
+  // 1. one time
+  // useEffect(() => {
+  //   document.title = `Count: ${count}`
+  // }, [])
+
+  // 2. with every render
+  // useEffect(() => {
+  //   document.title = `Count: ${count}`
+  // })
+
+  // 3. dependency array
+  // useEffect(() => {
+  //   document.title = `Count: ${count}`
+  // }, [count])
 
   useEffect(() => {
     const interval = setInterval(() => {
-      console.log("tick")
-    }, 1000)
+      console.log("tick");
+    }, 1000);
 
-    return () => clearInterval(interval)
-  }, [])
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <div>
@@ -19,7 +34,7 @@ function App() {
       <button
         onClick={() => {
           setCount((prev) => prev + 1);
-          setTest(!test)
+          setTest(!test);
         }}
       >
         Increase
