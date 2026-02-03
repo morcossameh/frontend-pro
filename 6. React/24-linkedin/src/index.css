@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --PRIMARY-COLOR: #0a66c2;
+  --NEUTRAL-COLOR: #f3f2ef;
+  --TEXT-NEUTRAL: #666;
+
+
+  --BORDER: 1px solid #e6e6e6;
+}
+
+body {
+  background-color: var(--NEUTRAL-COLOR);
+  font-family: BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+
+.main-content {
+  max-width: 1120px;
+
+  margin: 0 auto;
+  padding-top: 64px;
+  padding-left: 24px;
+  padding-right: 24px;
+
+  display: grid;
+  grid-template-columns: 225px 1fr 300px;
+  gap: 24px;
+}
+
+@media screen and (max-width: 1120px) {
+  .main-content {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.profile-pic-small {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+}

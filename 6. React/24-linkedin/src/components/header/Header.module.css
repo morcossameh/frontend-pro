@@ -1,0 +1,132 @@
+.header {
+  background-color: white;
+  border-bottom: var(--BORDER);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 0 1rem;
+  height: 52px;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.08), 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.faLinkedin {
+  color: var(--PRIMARY-COLOR);
+  font-size: 34px;
+  margin-right: 7px;
+}
+
+.headerContent {
+  max-width: 1120px;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+
+  height: 100%;
+}
+
+.searchContainer {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  background-color: #eef3f8;
+  border-radius: 6px;
+  padding: 0 12px;
+
+  flex-grow: 1;
+  height: 35px;
+
+  transition: background-color 0.15s;
+}
+
+.searchContainer span {
+  color: var(--TEXT-NEUTRAL);
+}
+
+.searchContainer:focus-within {
+  background-color: white;
+  outline: 1px solid var(--PRIMARY-COLOR);
+}
+
+.searchInput {
+  border: none;
+  background: transparent;
+  outline: none;
+  width: 100%;
+  font-size: 1rem;
+}
+
+.searchInput::placeholder {
+  color: var(--TEXT-NEUTRAL);
+}
+
+.headerNav {
+  margin-left: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.navItem {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  color: var(--TEXT-NEUTRAL);
+  text-decoration: none;
+  font-size: 12px;
+
+  padding: 10px 12px 4px;
+  height: 52px;
+  gap: 3px;
+}
+
+.navItem:hover,
+.navItem:focus {
+  color: black;
+}
+
+.active {
+  color: black;
+  border-bottom: 3px solid black;
+}
+
+.notificationBadge {
+  position: absolute;
+  top: 3px;
+  right: 30px;
+  background-color: #cc1016;
+  color: white;
+  font-size: 10px;
+  font-weight: bold;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  display: grid;
+  place-content: center;
+}
+
+.profilePicSmall {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+}
+
+.navDivider {
+  width: 1px;
+  height: 24px;
+  background-color: #e6e6e6;
+  margin: 0 8px;
+}
+
+@media screen and (max-width: 1120px) {
+  .headerNav {
+    display: none;
+  }
+}

@@ -1,0 +1,134 @@
+
+.leftSidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.profileCard {
+  background-color: white;
+  border: var(--BORDER);
+  border-radius: 8px;
+  overflow: hidden;
+
+  position: relative;
+}
+
+.profileBanner {
+  height: 54px;
+  background-image: url("https://images.unsplash.com/photo-1558293842-c0fd3db86157?q=80&w=1322&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"),
+    linear-gradient(135deg, #667eea, #764ba2);
+  background-size: cover;
+  background-position: center;
+}
+
+.profileInfo {
+  padding: 0 12px 16px;
+  text-align: center;
+}
+
+.profilePic {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+
+  position: absolute;
+  top: calc(54px - 72px / 2);
+  left: calc(50% - 72px / 2);
+
+  border: 2px solid #ffffff;
+}
+
+.profileInfo h2 {
+  padding-top: 40px;
+
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 2px;
+}
+
+.profileInfo p {
+  font-size: 12px;
+  color: var(--TEXT-NEUTRAL);
+  margin-bottom: 4px;
+}
+
+.location {
+  font-size: 12px;
+  color: var(--TEXT-NEUTRAL);
+}
+
+.companyInfo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 4px;
+
+  margin-top: 8px;
+  font-size: 12px;
+  color: var(--TEXT-NEUTRAL);
+}
+
+.sidebarMenu {
+  border-top: var(--BORDER);
+  padding: 12px;
+}
+
+.statItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.statItem:last-child {
+  margin-bottom: 0;
+}
+
+.statLabel {
+  font-size: 12px;
+  color: var(--TEXT-NEUTRAL);
+}
+
+.statNumber {
+  font-size: 12px;
+  color: var(--PRIMARY-COLOR);
+  font-weight: bold;
+}
+
+.sidebarMenu p {
+  font-size: 12px;
+  color: var(--TEXT-NEUTRAL);
+  margin-bottom: 8px;
+}
+
+.premiumLinkSection {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+
+  font-size: 12px;
+  color: #915907;
+  font-weight: bold;
+}
+
+.premiumIcon {
+  color: #915907;
+}
+
+.menuItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 8px 0;
+  font-size: 12px;
+  color: var(--TEXT-NEUTRAL);
+  cursor: pointer;
+}
+
+.menuItem:hover {
+  color: #000000;
+}
+

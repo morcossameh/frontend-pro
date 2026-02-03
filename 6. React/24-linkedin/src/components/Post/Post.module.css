@@ -1,0 +1,113 @@
+.post {
+  background-color: white;
+  border: var(--BORDER);
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+
+.postHeader {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 12px 16px;
+}
+
+.postAuthorInfo {
+  flex-grow: 1;
+}
+
+.postAuthorInfo h3 {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 2px;
+}
+
+.postAuthorInfo p {
+  font-size: 12px;
+  color: var(--TEXT-NEUTRAL);
+  margin-bottom: 2px;
+}
+
+.postTime {
+  font-size: 12px;
+  color: var(--TEXT-NEUTRAL);
+}
+
+.postMenu {
+  display: flex;
+  gap: 8px;
+  color: var(--TEXT-NEUTRAL);
+  cursor: pointer;
+}
+
+.postContent {
+  padding: 0 16px 12px;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.postContent ul {
+  margin: 8px 0;
+  padding-left: 20px;
+}
+
+.postContent li,
+.postContent p {
+  margin-bottom: 4px;
+}
+
+.postEngagement {
+  border-top: var(--BORDER);
+  padding: 8px 16px;
+}
+
+.engagementStats {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 8px;
+
+  font-size: 12px;
+  color: var(--TEXT-NEUTRAL);
+}
+
+.reactionCount {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.engagementActions {
+  display: flex;
+  justify-content: space-around;
+  border-top: var(--BORDER);
+  padding-top: 8px;
+}
+
+.noStats {
+  border-top: none;
+  padding-top: 0;
+}
+
+.engagementBtn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  background: none;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+
+  cursor: pointer;
+
+  font-size: 14px;
+  color: var(--TEXT-NEUTRAL);
+
+  transition: background-color 0.15s ease-in-out;
+}
+
+.engagementBtn:hover {
+  background-color: #f3f2ef;
+}
