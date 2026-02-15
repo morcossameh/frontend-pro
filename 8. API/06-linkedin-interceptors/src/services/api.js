@@ -40,16 +40,15 @@ api.interceptors.response.use(
   async (error) => {
     const originalRequest = error.config
 
-    // Handle 403 Forbidden - clear storage and redirect to login
-    if (error.response?.status === 403 || originalRequest._retry) {
-      return clearAndRedirectToLogin()
-    }
-
-    // If error is not 401 or request is already retried, format and throw error
+    // If error is not 401, format and throw error
     if (error.response?.status !== 401) {
-      // Format error message
       const errorMessage = error.response?.data?.error || error.message || 'An error occurred'
       return Promise.reject(new Error(errorMessage))
+    }
+
+    // Already retried with a fresh token — give up
+    if (originalRequest._retry) {
+      return clearAndRedirectToLogin()
     }
 
     // Mark that we've tried to refresh (prevents infinite loop)
