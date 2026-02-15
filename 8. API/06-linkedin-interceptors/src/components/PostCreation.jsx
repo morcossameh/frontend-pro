@@ -20,7 +20,8 @@ function PostCreation({ onCreatePost }) {
       setError(null);
 
       try {
-        const newPost = await createPost(`<p>${content}</p>`, [], 0, 0);
+        const newPost = await createPost(`<p>${content}</p>`);
+        newPost.user = currentUser;
         onCreatePost(newPost);
         setPostContent("");
       } catch (err) {

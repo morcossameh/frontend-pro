@@ -1,4 +1,8 @@
+import { getStoredUser } from "../services/authService";
+
 function Header() {
+
+  const currentUser = getStoredUser();
 
   return (
     <header className="bg-white border-b border-border-color fixed top-0 w-full z-50 px-4 h-header shadow-header">
@@ -37,7 +41,7 @@ function Header() {
           </a>
           <a href="#" className="nav-item">
             <img
-              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face"
+              src={currentUser?.profilePicture}
               alt="Profile"
               className="profile-pic-small"
             />

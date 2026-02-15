@@ -5,12 +5,14 @@ export const fetchPosts = async () => {
   return response.data
 }
 
-export const createPost = async (content, reactions = [], commentsCount = 0, repostsCount = 0) => {
+export const createPost = async (content) => {
+  const token = localStorage.getItem('accessToken')
   const response = await api.post('/api/posts', {
     content,
-    reactions,
-    commentsCount,
-    repostsCount,
+  }, {
+    headers: {
+      Authorization: token ? `Bearer ${token}` : ''
+    }
   })
   return response.data
 }
