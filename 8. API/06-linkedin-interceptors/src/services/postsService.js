@@ -14,18 +14,3 @@ export const createPost = async (content, reactions = [], commentsCount = 0, rep
   })
   return response.data
 }
-
-export const getPostById = async (id) => {
-  const response = await api.get(`/api/posts/${id}`)
-  return response.data
-}
-
-export const updatePost = async (id, updates) => {
-  const response = await api.put(`/api/posts/${id}`, updates)
-  return response.data
-}
-
-export const deletePost = async (id) => {
-  await api.delete(`/api/posts/${id}`)
-  return true
-}
